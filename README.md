@@ -23,7 +23,9 @@
 
 Этот проект лицензирован в соответствии с условиями лицензии MIT. Подробности можно найти в файле LICENSE.
 
+---
 
+# CSS Generator
 
 This project is a tool for generating CSS code based on user parameters. It will help you quickly create styling for web pages using a convenient interface.
 
