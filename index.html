@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <h1>CSS Generators</h1>
+        <div class="generators">
+            <button class="btnShadow" id="box">Box-Shadow</button>
+            <button class="btnText" id="text">Text-Shadow</button>
+            <button class="btnFont" id="font">Font</button>
+        </div>
+    </header>
+    <!-- box -->
+    <div class="boxShadow">
+        <div class="inputStyle">
+            <div class="range">
+                <div class="stab">
+                    <span>
+                        Shift right:
+                    </span>
+                    <button id="btnInline">0</button>
+                    <input type="range" min="-50" max="50" value="5" oninput="val()" id="inline">
+                    <p class="inline">5</p>
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Shift down:
+                    </span>
+                    <button id="btnBlock">0</button>
+                    <input type="range" min="-50" max="50" value="5" oninput="val()" id="block">
+                    <p class="block">5</p>
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Spread:
+                    </span>
+                    <button id="btnSpread">0</button>
+                    <input type="range" min="-30" max="50" value="5" oninput="val()" id="spread">
+                    <p class="spread">5</p>
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Blur:
+                    </span>
+                    <button id="btnBlur">0</button>
+                    <input type="range" min="0" max="50" value="5" oninput="val()" id="blur">
+                    <p class="blur">5</p>
+
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Opacity:
+                    </span>
+                    <button id="btnOpacity">1</button>
+                    <input type="range" min="0" max="1" value="1" step="0.01" oninput="val()" id="opacity">
+                    <p class="opacity">1</p>
+                </div>
+                <div class="color">
+                    <div>
+                        <span>Inset</span>
+                        <input type="checkbox" value="inset" oninput="val()" id="inset">
+                    </div>
+
+                    <div>
+                        <span>Color</span>
+                        <input type="color" value="#000000" oninput="val()" id="color">
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+                <div class="code">5px 5px 5px 5px #000000</div>
+            </div>
+            <div class="style">
+                <div class="cssCode">
+                    -webkit-box-shadow: 5px 5px 5px 5px #000000; <br> box-shadow: 5px 5px 5px 5px #000000;
+                </div>
+            </div>
+        </div>
+        <div class="outputStyle">
+            <div class="box"></div>
+        </div>
+    </div>
+    <!-- text -->
+    <div class="textShadow">
+        <div class="inputStyle">
+            <div class="range">
+                <div class="stab">
+                    <span>
+                        Shift right:
+                    </span>
+                    <button id="btnInlineText">0</button>
+                    <input type="range" min="-40" max="40" value="2" oninput="shad()" id="inlineText">
+                    <p class="inlineText">2</p>
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Shift down:
+                    </span>
+                    <button id="btnBlockText">0</button>
+                    <input type="range" min="-40" max="40" value="2" oninput="shad()" id="blockText">
+                    <p class="blockText">2</p>
+                </div>
+
+                <div class="stab">
+                    <span>
+                        Blur:
+                    </span>
+                    <button id="btnBlurText">0</button>
+                    <input type="range" min="0" max="20" value="2" oninput="shad()" id="blurText">
+                    <p class="blurText">2</p>
+
+                </div>
+                <div class="stab">
+                    <span>
+                        Opacity:
+                    </span>
+                    <button id="btnOpacityText">1</button>
+                    <input type="range" min="0" max="1" value="1" step="0.01" oninput="shad()" id="opacityText">
+                    <p class="opacityText">1</p>
+                </div>
+                <div class="color">
+                    <div class="colorText">
+                        <div>
+                            <span>Color</span>
+                            <input type="color" value="#CE5937" oninput="shad()" id="colorText">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="shadow">
+                <div class="textCodeShadow">2px 2px 2px #CE5937</div>
+            </div>
+            <div class="style">
+                <div class="cssCodeText">text-shadow: 2px 2px 2px #CE5937;</div>
+            </div>
+        </div>
+        <div class="outputStyle">
+            <h1 class="outputText">preview</h1>
+        </div>
+    </div>
+    <!-- font -->
+    <!--styling-->
+    <div class="font">
+        <div class="inputFont">
+            <div class="stab1">
+                <span class="span">Font family:</span>
+                <select name="Font Family" oninput="font()" id="fontFam">
+                    <option value="Georgia">Georgia</option>
+                    <option value="Palatino">Palatino</option>
+                    <option value="Times New Roman">Times New Roman</option>
+                    <option value="Arial">Arial</option>
+                    <option value="Arial black">Arial Black</option>
+                    <option value="Comic sans">Comic Sans</option>
+                    <option value="Impact">Impact</option>
+                    <option value="Lucida sans">Lucida Sans</option>
+                    <option value="Tahoma">Tahoma</option>
+                    <option value="Trebuchet">Trebuchet</option>
+                    <option value="Verdana">Verdana</option>
+                    <option value="Courier">Courier</option>
+                    <option value="Lucida Console">Lucida Console</option>
+                </select>
+            </div>
+            <div class="stab1">
+                <span class="span">Font size:</span>
+                <div class="btn"></div>
+                <input type="range" min="2" max="40" value="25" oninput="font()" id="fontSize">
+                <p class="fontSize">25</p>
+            </div>
+            <div class="stab1">
+                <span class="span">Letter sp:</span>
+                <button id="clearLS">0</button>
+                <input type="range" min="-5" max="6" value="0" step="0.1" oninput="font()" id="lSp">
+                <p class="ltSp">0</p>
+            </div>
+            <div class="stab1">
+                <span class="span">Word sp:</span>
+                <button id="clearWS">0</button>
+                <input type="range" min="-5" max="6" value="0" step="0.1" oninput="font()" value="0" id="wordSp">
+                <p class="woSp">0</p>
+            </div>
+            <div class="stab1 ">
+                <span class="span">Color:</span>
+                <input type="color" class="textColor" oninput="font()" id="textColor">
+            </div>
+            <div class="stab1">
+                <span class="span">Weight:</span>
+                <button class="btn1 btn2 weightNormal">Normal</button>
+                <button class="btn1 weightBold">Bold</button>
+            </div>
+            <div class="stab1">
+                <span class="span">Decoration:</span>
+                <button class="btn1 btn2 decNone">None</button>
+                <button class="btn1 decUnder">Underline</button>
+                <button class="btn1 decOver">Overline</button>
+                <button class="btn1 decLine">Line-through</button>
+            </div>
+            <div class="stab1">
+                <span class="span">Style:</span>
+                <button class="btn1 btn2 styleNormal">Normal</button>
+                <button class="btn1 styleUnset">Unset</button>
+                <button class="btn1 styleItalic">Italic</button>
+                <button class="btn1 styleOblique">Oblique</button>
+            </div>
+            <div class="stab1">
+                <span class="span">Variant:</span>
+                <button class="btn1 btn2  varNormal">Normal</button>
+                <button class="btn1 varSmall">Small Caps</button>
+            </div>
+            <div class="stab1">
+                <span class="span">Transform:</span>
+                <button class="btn1 btn2 trNone">None</button>
+                <button class="btn1 trUpper">Uppercase</button>
+                <button class="btn1 trLower">Lowercase</button>
+                <button class="btn1 trCapitalize">Capitalize</button>
+            </div>
+        </div>
+        <!-- text -->
+        <div class="outputFont">
+            <div class="h1">
+                <h1 id="h1">Grumpy wizards make toxic brew for the evil Queen and Jack.</h1>
+            </div>
+            <div class="textStyle">
+                <div class="textCode">font-family: Georgia,serif; <br> font-size: 25px;<br> letter-spacing: 2px; <br>
+                    word-spacing: 2px; <br> color: #000000; <br> font-weight: normal; <br> text-decoration: none; <br>
+                    font-style: normal; <br> font-variant: normal; <br> text-transform: none;</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/script.js"></script>
+</body>
+
+</html>
